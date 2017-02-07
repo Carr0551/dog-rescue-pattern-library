@@ -1,12 +1,12 @@
 :root {
-  --color-primary: #0D2E3D;
-  --color-primary-ligt: #0F6CA0;
-  --color-secondary: #FFF;
-  --color-accent: #F6C53C;
-  --color-neutral-grey: #82817D;
+  --color-primary: #0d2e3d;
+  --color-primary-ligt: #0f6ca0;
+  --color-secondary: #fff;
+  --color-accent: #f6c53c;
+  --color-neutral-grey: #82817d;
 
-  --font-primary: "Lato", "Roboto", Open Sans, sans-serif;
-  --font-secondary: "Julius Sans", Oxygen, Source Sans Pro, monospace;
+  --font-primary: "Lato", "Roboto", open sans, sans-serif;
+  --font-secondary: "Julius Sans", oxygen, source sans pro, monospace;
 }
 
 html {
