@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #0d2e3d;
-  --color-primary-ligt: #0f6ca0;
+  --color-primary: #1b5160;
+  --color-primary-light: #488fa8;
   --color-secondary: #fff;
-  --color-accent: #f6c53c;
+  --color-accent: #fcbc1d;
+  --color-accent-light: #f4d590;
   --color-neutral-grey: #82817d;
 
   --font-primary: "Lato", "Roboto", open sans, sans-serif;
@@ -11,4 +12,52 @@
 
 html {
   font-family: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-primary);
+}
+
+h3 {
+  color: var(--color-primary-light);
+}
+
+h4 {
+  color: var(--color-neutral-grey);
+}
+
+a {
+  color: var(--color-primary-light);
+}
+
+ul {
+  color: var(--color-neutral-grey);
+}
+
+ol {
+  color: var(--color-neutral-grey);
+}
+
+dl {
+  color: var(--color-neutral-grey);
+}
+
+cite {
+  color: var(--color-primary-light);
+}
+
+blockquote {
+  color: var(--color-primary-light);
+}
+
+mark {
+  background-color: var(--color-accent-light);
+}
+
+u {
+  color: var(--color-neutral-grey);
 }

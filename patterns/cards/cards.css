@@ -1,0 +1,23 @@
+.card {
+  border: none;
+}
+
+p {
+  text-align: center;
+  color: var(--color-accent);
+}
+img {
+  text-align: center;
+  margin: auto;
+}
+
+.card-one, .card-three {
+  border-color: var(--color-primary-light);
+  border-left: 5px;
+}
+
+.card-two {
+  border-color: var(--color-primary-light);
+  border-left: 5px;
+  border-right: 5px;
+}
