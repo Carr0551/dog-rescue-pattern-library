@@ -1,33 +1,11 @@
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
-html {
-  box-sizing: border-box;
-
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-
-  font-family: "PT Sans", sans-serif;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-.img-flex {
-  display: block;
-  width: 100%;
-}
-
 .banner {
   position: relative;
   overflow: hidden;
   max-height: 24em;
+  background-image: url("images/dog-banner.jpg");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
 }
 
 .banner-content {
@@ -35,5 +13,6 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 60%;
   display: block;
 }
