@@ -1,0 +1,12 @@
+.dog-2, .dog-5, .dog-8, .dog-11, .dog-14, .dog-17, .dog-20, .dog-23 {
+  border-right: 3px solid #488fa8;
+  border-left: 3px solid #488fa8;
+}
+
+.event-btn {
+  border-radius: 5px;
+  border: 0;
+  padding: 3px;
+  background-color: #82817d;
+  color: #fff;
+}

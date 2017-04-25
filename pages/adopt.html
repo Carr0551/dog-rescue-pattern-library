@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adopt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:400,400i,700" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/sections/sections.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/form/form.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="masthead pad-t push-none text-center">
+      <div class="inline">
+        <i class="icon i-64 push-r-1-4">
+          <img class="img-flex" src="../images/logo.svg" alt="">
+        </i>
+        <h1> <a class="title push-none" href="home.html">Loyal Rescue</a></h1>
+      </div>
+      <nav class="main-nav text-center">
+        <ul class="grid main-nav-content island text-center list-group">
+          <li class="unit xs-1 s-1-2 m-1-4 push-1-2"><a class="navigation" href="dogs.html">Adoption</a></li>
+          <li class="unit xs-1 s-1-2 m-1-4 push-1-2"><a class="navigation" href="adopt.html">Application</a></li>
+          <li class="unit xs-1 s-1-2 m-1-4 push-1-2"><a class="navigation" href="">Contact</a></li>
+          <li class="unit xs-1 s-1-2 m-1-4 push-1-2"><a class="navigation" href="">Happy Tails</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <h1>Adoption Form</h1>
+      <h2>Owner Information</h2>
+
+      <form class="push-0" novalidate>
+        <div class="push">
+          <label for="first-name">First Name</label>
+          <input id="first-name" required aria-describedby="first-name-error">
+          <p class="error-message milli islan-1-4 push-0" id="first-name-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a name</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" required aria-describedby="last-name-error">
+          <p class="error-message milli islan-1-4 push-0" id="last-name-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a name</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="email">Your email</label>
+          <input type="email" id="email" placeholder="me@me.com" required aria-describedby="email-error">
+          <p class="error-message milli island-1-4 push-0" id="email-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="phone-number">Phone Number</label>
+          <input id="phone-number" type="tel" placeholder="xxx-xxx-xxxx" required aria-describedby="phone-number-error" name="phone-number">
+          <p class="error-message milli island-1-4 push-0" id="phone-number-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted phone number</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="address">Address</label>
+          <input id="address" type="text" placeholder="1558 Merivale Road" required aria-describedby="address-error" name="address">
+          <p class="error-message milli island-1-4 push-0" id="address-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted address</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="city">City</label>
+          <input id="city" type="text" placeholder="Ottawa" required aria-describedby="city-error" name="city">
+          <p class="error-message milli island-1-4 push-0" id="city-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted city location</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="province">Province</label>
+          <input id="province" type="text" placeholder="Ontario" required aria-describedby="city-error" name="province">
+          <p class="error-message milli island-1-4 push-0" id="province-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted provincial location</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="postal-code">Postal Code</label>
+          <input id="postal-code" type="text" placeholder="xxx-xxx" required aria-describedby="city-error" name="postal-code">
+          <p class="error-message milli island-1-4 push-0" id="postal-code-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted postal code</span>
+          </p>
+        </div>
+        <div class="push">
+          <label for="occupation">Occupation</label>
+          <select id="occupation" name="occupation">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Cashier</option>
+            <option>Office Clerk</option>
+            <option>Registered Nurse</option>
+            <option>Waitress</option>
+            <option>Secretary/Administrator</option>
+            <option>Accountant</option>
+            <option>Receptionist</option>
+            <option>Chilcare Worker</option>
+            <option>Lawyer</option>
+            <option>Retail Sales Person</option>
+            <option>Manager</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="living">Do you live in a</label>
+          <select id="living" name="living">
+            <option>--select--</option>
+            <option>House</option>
+            <option>Townhouse</option>
+            <option>Condo</option>
+            <option>Apartment</option>
+            <option>Duplex</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="pay">Do you</label>
+          <select id="pay" name="pay">
+            <option>--select--</option>
+            <option>Own</option>
+            <option>Rent</option>
+            <option>Live With Parents</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="geo">Environment</label>
+          <select id="geo" name="geo">
+            <option>--select--</option>
+            <option>Rural</option>
+            <option>Urban</option>
+            <option>Suburban</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="pets">Please list any other pets you own</label>
+          <textarea id="pets" class="notes" required aria-describedby="pets-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="pets-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted postal code</span>
+          </p>
+        </div>
+        <div class="max-length">
+          <h2>References</h2>
+          <h3>Reference #1</h3>
+          <div class="push">
+            <label for="first-name-reference-one">First Name</label>
+            <input id="first-name-reference-one" required aria-describedby="first-name-reference-one-error">
+            <p class="error-message milli islan-1-4 push-0" id="first-name-reference-one-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="last-name-reference-one">Last Name</label>
+            <input id="last-name-reference-one" required aria-describedby="last-name-reference-one-error">
+            <p class="error-message milli islan-1-4 push-0" id="last-name-reference-one-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="email-reference-one">Your email</label>
+            <input type="email" id="email-reference-one" placeholder="me@me.com" required aria-describedby="email-reference-one-error">
+            <p class="error-message milli island-1-4 push-0" id="email-reference-one-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted email address</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="phone-number-reference-one">Phone Number</label>
+            <input id="phone-number-reference-one" type="tel" placeholder="xxx-xxx-xxxx" required aria-describedby="phone-number-reference-one-error" name="phone-number-reference-one">
+            <p class="error-message milli island-1-4 push-0" id="phone-number-reference-one-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted phone number</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="address-reference-one">Address</label>
+            <input id="address-reference-one" type="text" placeholder="1558 Merivale Road" required aria-describedby="address-reference-one-error" name="address-reference-one">
+            <p class="error-message milli island-1-4 push-0" id="address-reference-one-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted address</span>
+            </p>
+          </div>
+          <h3>Reference #2</h3>
+          <div class="push">
+            <label for="first-name-reference-two">First Name</label>
+            <input id="first-name-reference-two" required aria-describedby="first-name-reference-two-error">
+            <p class="error-message milli islan-1-4 push-0" id="first-name-reference-two-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="last-name-reference-two">Last Name</label>
+            <input id="last-name-reference-two" required aria-describedby="last-name-reference-two-error">
+            <p class="error-message milli islan-1-4 push-0" id="last-name-reference-two-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="email-reference-two">Your email</label>
+            <input type="text" id="email-reference-two" placeholder="me@me.com" required aria-describedby="email-reference-two-error">
+            <p class="error-message milli island-1-4 push-0" id="email-reference-two-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted email address</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="phone-reference-two">Phone Number</label>
+            <input id="phone-reference-two" type="tel" placeholder="xxx-xxx-xxxx" required aria-describedby="phone-reference-two-error" name="phone-reference-two">
+            <p class="error-message milli island-1-4 push-0" id="phone-reference-two-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted phone number</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="address-reference-two">Address</label>
+            <input id="address-reference-two" type="text" placeholder="1558 Merivale Road" required aria-describedby="address-reference-two-error" name="address">
+            <p class="error-message milli island-1-4 push-0" id="address-reference-two-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted address</span>
+            </p>
+          </div>
+          <h3>Reference #3</h3>
+          <div class="push">
+            <label for="first-name-reference-three">First Name</label>
+            <input id="first-name-reference-three" required aria-describedby="first-name-reference-three-error">
+            <p class="error-message milli islan-1-4 push-0" id="first-name-reference-three-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="last-name-reference-three">Last Name</label>
+            <input id="last-name-reference-three" required aria-describedby="last-name-reference-three-error">
+            <p class="error-message milli islan-1-4 push-0" id="last-name-reference-three-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a name</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="email-reference-three">Your email</label>
+            <input type="text" id="email-reference-three" placeholder="me@me.com" required aria-describedby="email-reference-three-error">
+            <p class="error-message milli island-1-4 push-0" id="email-reference-three-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted email address</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="phone-reference-three">Phone Number</label>
+            <input id="phone-reference-three" type="tel" placeholder="xxx-xxx-xxxx" required aria-describedby="phone-reference-three-error" name="phone-reference-three">
+            <p class="error-message milli island-1-4 push-0" id="phone-reference-three-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted phone number</span>
+            </p>
+          </div>
+          <div class="push">
+            <label for="address-reference-three">Address</label>
+            <input id="address-reference-three" type="text" placeholder="1558 Merivale Road" required aria-describedby="address-reference-three-error" name="address-reference-three">
+            <p class="error-message milli island-1-4 push-0" id="address-reference-three-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+              <span class="icon-label">Please provide a properly formatted address</span>
+            </p>
+          </div>
+        </div>
+        <div class="push-1-2 pad-t-1-2">
+          <input type="checkbox" id="agree" required aria-describedby="agree-error">
+          <label for="agree">I agree to the Terms of Use, Privacy Policy</label>
+          <p class="error-message milli island-1-4 push-0" id="agree-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please agree that you're totally awesome</span>
+          </p>
+        </div>
+        <div class="pad-t-1-2">
+          <button class="btn btn-ghost" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer island">
+    <p class="push-0">
+      <a class="footer-nav" href="#">Adoption</a> | <a class="footer-nav" href="#">Application</a> | <a class="footer-nav" href="#">Contact Us</a> | <a class="footer-nav" href="#">Happy Tails</a>
+    </p>
+    <p class="push-0">Loyal Rescue company © 2017 All Rights Reserved</p>
+    <a class="footer-nav" href="#">Advertise</a> | <a class="footer-nav" href="#">Terms and Conditions</a> | <a class="footer-nav" href="#">Privacy Policy</a> | <a class="footer-nav" href="#">Contact Us</a>
+  </footer>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>

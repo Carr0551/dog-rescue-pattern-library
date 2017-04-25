@@ -9,10 +9,13 @@
 }
 
 .banner-content {
-  color: #fff;
+  width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
-  right: 60%;
   display: block;
+}
+
+.title {
+  color: #488fa8;
 }

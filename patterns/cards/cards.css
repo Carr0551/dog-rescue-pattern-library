@@ -2,12 +2,12 @@
   border: none;
 }
 
-p {
+.dog-name, .event-info {
   text-align: center;
   color: var(--color-accent);
 }
 
-img {
+.dog {
   text-align: center;
   margin: auto;
 }
